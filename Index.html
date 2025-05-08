@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Yourself</title>
+</head>
+<body>
+
+    <h2>About Yourself</h2>
+
+    <form action="class11.php" method="post">
+        
+        <label>Name:</label> 
+        <input type="text" name="name"><br><br>
+
+        <label>Password:</label> 
+        <input type="password" name="password"><br><br>
+
+        <label>Address:</label> 
+        <input list="addresses" name="address">
+        <datalist id="addresses">
+            <option value="Makwanpur">
+            <option value="Bara">
+            <option value="Kathmandu">
+            <option value="Lalitpur">
+            <option value="Bhaktapur">
+        </datalist><br><br>
+
+        <label>Gender:</label> 
+        <input type="radio" name="gender" value="male"> Male
+       
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Hobbies:</label><br>
+        
+        <input type="checkbox" name="hobbies[]" value="reading"> Reading<br>
+        
+        <input type="checkbox" name="hobbies[]" value="sports"> Sports<br>
+       
+        <input type="checkbox" name="hobbies[]" value="music"> Music<br>
+        
+        <input type="checkbox" name="hobbies[]" value="gaming"> Gaming<br>
+        
+        <input type="checkbox" name="hobbies[]" value="traveling"> Traveling<br><br>
+
+        <label>Describe Yourself:</label><br>
+        <textarea name="description" rows="4" cols="30" placeholder="Write about yourself..."></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+        <h2>Watch This Video</h2>
+    <video width="393" controls>
+        <source src="mann mera.mp4" type="video/mp4">
+    </video><br><br>
+
+    <h2>Listen to This Song</h2>
+    <p><b>Zaalima - Raees</b> (Shah Rukh Khan, Mahira Khan, Arijit Singh, Harshdeep Kaur, JAM8, Pritam)</p>
+    <audio controls>
+        <source src="Zaalima___Raees___Shah_Rukh_Khan___Mahira_Khan___Arijit_Singh___Harshdeep_Kaur___JAM8___Pritam(256k).mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
